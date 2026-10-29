@@ -1,0 +1,40 @@
+/* Carregado apenas quando o JavaScript está desativado: o menu fica sempre visível. */
+.menu-botao {
+  display: none !important;
+}
+
+.cabecalho__barra {
+  flex-wrap: wrap;
+}
+
+.menu {
+  order: 5;
+  width: 100%;
+}
+
+.menu__lista {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0 1.25rem;
+  position: static !important;
+  padding: 0 0 0.5rem !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.menu__lista a {
+  padding: 0.5rem 0 !important;
+  border: 0 !important;
+}
+
+@media (min-width: 60em) {
+  .menu {
+    order: 0;
+    width: auto;
+  }
+
+  .menu__lista {
+    padding: 0 !important;
+  }
+}
